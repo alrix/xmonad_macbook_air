@@ -1,0 +1,31 @@
+# Start the cbatticon applet
+cbatticon -l 15 -r 5 -c "systemctl shutdown" &
+
+# Start the nm-applet
+nm-applet &
+
+# Set window manager name for java etc.
+wmname LG3D &
+
+# Setup redshift
+redshift -l 51.32:0.5 &
+
+# Startup compositor
+compton -CGb --backend=glx --shadow-exclude 'g:e:Tint2' &
+#xcompmgr -n &
+
+# Disable mouse while typing
+syndaemon -i 1.0 -d &
+
+# Set background
+feh --bg-scale ~/.xmonad/resources/yosemite.jpg &
+
+# Calibrate the colour of the screen
+xcalib ~/.xmonad/resources/Macbook_Air.icc &
+
+# Fix keyboard
+xmodmap ~/.xmonad/resources/Xmodmap &
+
+# Start Pulseaudio
+/usr/bin/start-pulseaudio-x11 &
+

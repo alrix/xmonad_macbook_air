@@ -1,0 +1,16 @@
+background yes
+out_to_console yes
+out_to_x no
+# Update interval in seconds
+update_interval 2
+ 
+TEXT
+^i(/home/alrix/.xmonad/dzen2/volume.xbm) ^fg(\#FFFFFF)${exec (amixer get Master -M | grep -oE "[[:digit:]]*%"| head -1)}  \
+^i(/home/alrix/.xmonad/dzen2/cpu.xbm) ^fg(\#FFFFFF)${cpu}% \
+^i(/home/alrix/.xmonad/dzen2/mem.xbm) ^fg(\#FFFFFF)${memperc}%  \
+^i(/home/alrix/.xmonad/dzen2/temp.xbm) ^fg(\#FFFFFF)${hwmon 1 temp 1}°C  \
+^i(/home/alrix/.xmonad/dzen2/fs_01.xbm) ^fg(\#FFFFFF)${exec (sensors | grep Exhaust | awk '{print $3}')}  \
+^i(/home/alrix/.xmonad/dzen2/battery.xbm) ^fg(\#FFFFFF)${battery BAT0}  \
+^fg(\#ebac54) ^i(/home/alrix/.xmonad/dzen2/wifi_02.xbm) ${wireless_essid wlp3s0}\
+^fg(\#ebac54)${if_up tun0}^i(/home/alrix/.xmonad/dzen2/arr_up.xbm)${else}^i(/home/alrix/.xmonad/dzen2/arr_down.xbm)$endif  \
+^fg(\#ebac54)^i(/home/alrix/.xmonad/dzen2/clock.xbm)^fg(\#FFFFFF) ${time %d %m %Y} ^fg(\#ebac54) ${time %R} 

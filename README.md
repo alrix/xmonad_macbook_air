@@ -9,7 +9,9 @@ Contains xmonad config optimised for macbook air running Arch Linux. I can't tak
 * tint2
 * conky
 
-##Additional programs referenced in xprofile. 
+##Additional programs 
+
+These get referenced in xprofile which I just symlink to ~/.xprofile. This gets read and invoked on entering xmonad from lightdm. 
 
 * cbatticon - Monitors the battery and shuts the laptop down if the battery gets too low. I'm only using systemd for power management.
 

@@ -1,16 +1,19 @@
 Xmonad Config for MacBook Air 11
 ================================
 
-Contains xmonad config optimised for macbook air running Arch Linux. I can't take the credit for all the fancy stuff because I've simply adapted it from other people's configs.
+Contains xmonad config optimised for a Macbook Air 11 (Mid-2013) running Arch Linux. I can't take the credit for all the fancy stuff because I've simply adapted it from other people's configs.
 
 ![Alt text](/screenshot.png?raw=true "Screenshot")
 
+The config includes the media keys to spawn things like keyboard light settings, volume, etc.
 
 ##Dependencies
 
 * dzen2
 * tint2
 * conky
+* kbdlight
+* compton
 
 ##Additional programs 
 

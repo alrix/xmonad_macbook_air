@@ -14,7 +14,9 @@ Contains xmonad config optimised for macbook air running Arch Linux. I can't tak
 
 ##Additional programs 
 
-These get referenced in xprofile which I just symlink to ~/.xprofile. This gets read and invoked on entering xmonad from lightdm. 
+Many of these get referenced in xprofile which I just symlink to ~/.xprofile. This gets read and invoked on entering xmonad from lightdm. 
+
+* dunst - Provides desktop notifications
 
 * cbatticon - Monitors the battery and shuts the laptop down if the battery gets too low. I'm only using systemd for power management.
 

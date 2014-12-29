@@ -35,5 +35,5 @@ Many of these get referenced in xprofile which I just symlink to ~/.xprofile. Th
 
 * xcalib - calibrage the colour of the screen
 
-* xmodmap - I have a UK keyboard which requires some tweaking to swap the grave and tilder keys
+* xmodmap - I have a UK keyboard which requires some tweaking to swap the grave and tilde keys
 

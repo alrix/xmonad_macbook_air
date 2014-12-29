@@ -3,7 +3,7 @@ Xmonad Config for MacBook Air 11
 
 Contains xmonad config optimised for macbook air running Arch Linux. I can't take the credit for all the fancy stuff because I've simply adapted it from other people's configs.
 
-![Alt text](/alrix/xmonad_macbook_air/screenshot.png?raw=true "Screenshot")
+![Alt text](/screenshot.png?raw=true "Screenshot")
 
 
 ##Dependencies

@@ -34,7 +34,6 @@ import XMonad.Hooks.FadeInactive
  
 -- Layouts
 import XMonad.Layout.Grid
-import XMonad.Layout.IM
 import XMonad.Layout.LayoutHints
 import XMonad.Layout.LayoutModifier
 import XMonad.Layout.PerWorkspace (onWorkspace, onWorkspaces)
@@ -170,7 +169,6 @@ myLogHook h = dynamicLogWithPP $ defaultPP
                      "SmartSpacing 2 ResizableTall" -> "^i(" ++ myBitmapsDir ++ "/tall.xbm)"
                      "SmartSpacing 2 Mirror ResizableTall" -> "^i(" ++ myBitmapsDir ++ "/mtall.xbm)"
                      "SmartSpacing 2 Full" -> "^i(" ++ myBitmapsDir ++ "/full.xbm)"
-                     "SmartSpacing 2 Simple Float" ->  "~"
                      "SmartSpacing 2 Grid" -> "+"
                      "SmartSpacing 2 Tabbed Simplest" -> "^i(" ++ myBitmapsDir ++ "/full.xbm)"
                      _ -> x
@@ -191,7 +189,7 @@ myTabConfig = defaultTheme {  inactiveBorderColor = "#1B1D1E"
                             , decoHeight = 24
                            } 
 
-customLayout = avoidStruts $ smartSpacing 2 $ tiled ||| Mirror tiled ||| Grid ||| tabbed shrinkText myTabConfig ||| simpleFloat 
+customLayout = avoidStruts $ smartSpacing 2 $ tiled ||| Mirror tiled ||| Grid ||| tabbed shrinkText myTabConfig 
   where
     tiled   = ResizableTall 1 (2/100) (1/2) []
  

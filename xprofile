@@ -1,5 +1,5 @@
 # Start the cbatticon applet
-cbatticon -l 15 -r 5 -c "systemctl shutdown" &
+cbatticon -l 15 -r 5 -c "systemctl shutdown"  -i symbolic &
 
 # Start the nm-applet
 nm-applet &
@@ -29,3 +29,5 @@ xmodmap ~/.xmonad/resources/Xmodmap &
 # Start Pulseaudio
 /usr/bin/start-pulseaudio-x11 &
 
+# Start XSS-Lock and Slock
+/usr/bin/xss-lock slock &

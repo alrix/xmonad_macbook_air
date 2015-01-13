@@ -10,7 +10,7 @@ TEXT
 ^i(/home/alrix/.xmonad/dzen2/mem.xbm) ^fg(\#FFFFFF)${memperc}%  \
 ^i(/home/alrix/.xmonad/dzen2/temp.xbm) ^fg(\#FFFFFF)${hwmon 1 temp 1}°C  \
 ^i(/home/alrix/.xmonad/dzen2/fs_01.xbm) ^fg(\#FFFFFF)${exec (sensors | grep Exhaust | awk '{print $3}')}  \
-^i(/home/alrix/.xmonad/dzen2/battery.xbm) ^fg(\#FFFFFF)${battery_time BAT0}  \
+^i(/home/alrix/.xmonad/dzen2/battery.xbm) ^fg(\#FFFFFF)${battery_short BAT0} ${battery_time BAT0}  \
 ^fg(\#ebac54) ^i(/home/alrix/.xmonad/dzen2/wifi_02.xbm) ${wireless_essid wlp3s0}\
 ^fg(\#ebac54)${if_up tun0}^i(/home/alrix/.xmonad/dzen2/arr_up.xbm)${else}^i(/home/alrix/.xmonad/dzen2/arr_down.xbm)$endif  \
 ^fg(\#ebac54)^i(/home/alrix/.xmonad/dzen2/clock.xbm)^fg(\#FFFFFF) ${time %d %m %Y} ^fg(\#ebac54) ${time %R} 

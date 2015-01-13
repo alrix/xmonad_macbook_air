@@ -231,15 +231,13 @@ largeXPConfig = mXPConfig
 
 -- Dzen/Conky
 myXmonadBar = "dzen2 -geometry '+0+0' -h '24' -w '600' -ta 'l' -fg '#FFFFFF' -bg '#1B1D1E' -fn 'xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true'"
-myStatusBar = "conky -c /home/alrix/.xmonad/conky_dzen | dzen2 -geometry '+600+0' -w '670' -h '24' -ta 'r' -bg '#1B1D1E' -fg '#FFFFFF' -fn 'xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true'"
+myStatusBar = "conky -c /home/alrix/.xmonad/conky_dzen | dzen2 -geometry '+600+0' -w '766' -h '24' -ta 'r' -bg '#1B1D1E' -fg '#FFFFFF' -fn 'xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true'"
 myBitmapsDir = "/home/alrix/.xmonad/dzen2"
-mySysTray = "tint2 -c /home/alrix/.xmonad/tint2rc"
 
 -- Main: Run the bars and pass config to xmonad 
 main = do
     dzenLeftBar <- spawnPipe myXmonadBar
     dzenRightBar <- spawnPipe myStatusBar
-    dzenSysTray <- spawnPipe mySysTray
     xmonad $ ewmh defaultConfig
       { terminal            = myTerminal
       , workspaces          = myWorkspaces
